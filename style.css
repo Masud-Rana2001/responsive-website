@@ -7,3 +7,12 @@
 body{
   font-family: montserrat;
 }
+nav{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-between;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
