@@ -8,11 +8,101 @@ body{
   font-family: montserrat;
 }
 nav{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  display: flex;
+  background-image: linear-gradient(#1c2833ec,#164674);
+  height: 80px;
+  width: 100%;
   justify-content: space-between;
+  padding: 0 50px 0 80px  ;
+    align-items: center;
 }
 nav ul{
   display: flex;
   justify-content: space-between;
+}
+.logo{
+  font-size: 30px ;
+  font-weight: 600;
+  color: white;
+  
+}
+nav ul{
+  display: flex;
+
+  
+}
+nav ul li{
+  list-style: none;
+  margin: 0 8px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 550;
+  color: white;
+ padding: 7px 10px;
+  background-image: linear-gradient(#5883ab29,#2e91ed41);
+ transition: 0.5s;
+ border-radius: 8px;
+text-transform: uppercase;
+}
+nav ul li a:hover,nav ul li a.active{
+   background-image: linear-gradient(#5883abec,#2e90ed);
+   border-radius: 8px;
+}
+#click{
+  display: none;
+}
+.menu-button{
+  color: aliceblue;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+/* responsive work start */
+
+@media only screen and (max-width:940px) {
+  nav ul{
+   
+     position: fixed;
+    top:80px;
+    flex-direction: column;
+    background-image: linear-gradient(#1c2833ec,#164674);
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    padding-top: 30px;
+    left: -100%;
+    transition: all .5s ease;
+  }
+  nav ul li{
+    padding-bottom: 50px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    padding: 10px;
+  }
+  nav ul li a:hover , nav ul li a.active{
+    background: none;
+    color: rgb(255, 0, 0);
+  }
+  .menu-button{
+  display: block;
+  }
+  #click:checked ~ ul{
+  left: 0%;
+  }
+  #click:checked ~ .menu-button i::before{
+    content: "\58";
+  }
+
+}
+/* header section code start here */
+
+header{
+  background-image: url(image/2.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
