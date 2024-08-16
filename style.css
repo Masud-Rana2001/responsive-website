@@ -106,3 +106,58 @@ header{
   background-repeat: no-repeat;
   background-position: center center;
 }
+/* <!-- main section code start here --> */
+section{
+  background-color: #164774ac;
+}
+section > h2{
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  padding: 20px 0;
+  letter-spacing: .2em;
+}
+
+
+.service-parent{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 950px;
+  margin: 0 auto;
+  grid-gap: 24px;
+  padding-bottom: 30px;
+}
+.service-child{
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(203, 29, 133, 0.679);
+  text-align: center;
+}
+.service-child i{
+  font-size: 29px;
+}
+.service-child h2{
+  padding: 8px 0;
+}
+
+/* first section of main tag media quary code start here */
+@media only screen and (max-width:688px){
+.service-parent{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 24px;
+}
+
+}
+@media only screen and (min-width:699px) and (max-width:950px){
+.service-parent{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 24px;
+}
+}
