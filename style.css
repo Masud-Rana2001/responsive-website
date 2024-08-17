@@ -107,10 +107,10 @@ header{
   background-position: center center;
 }
 /* <!-- main section code start here --> */
-section{
+.first-section{
   background-color: #164774ac;
 }
-section > h2{
+.first-section > h2{
   text-align: center;
   font-size: 28px;
   color: white;
@@ -141,8 +141,56 @@ section > h2{
   padding: 8px 0;
 }
 
+
+/* secend section code start here */
+.second-section{
+  background-color: #d6eaf8;
+}
+.smart-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 200px;
+  padding: 100px 0;
+}
+.smart-text{
+  margin-left: 100px;
+  text-align: center;
+}
+.smart-text h2{
+  margin: 30px 0;
+  font-size: 28px;
+}
+.smart-text h4{
+  font-size: 20px;
+}
+.smart-text a{
+  text-decoration: none;
+  font-size: 22px;
+  background-color: #8c00ff;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 8px 30px;
+  display: inline-block;
+  margin: 40px 0;
+  border-radius: 10px;
+}
+.second-section > h2{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+
+
+
+
 /* first section of main tag media quary code start here */
-@media only screen and (max-width:688px){
+
+
+
+
+@media only screen and (max-width:688px) {
 .service-parent{
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -151,13 +199,121 @@ section > h2{
   grid-gap: 24px;
 }
 
+
+/* second section of main tag media quary code start here */
+.smart-area{
+  display: block;
+  margin: 0 50px;
+  padding: 50px 0;
+  
 }
-@media only screen and (min-width:699px) and (max-width:950px){
-.service-parent{
+.smart-area-img{
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+}
+.smart-area-img img{
+  width: 100%;
+}
+.second-section > h2{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+
+/* third section code start here */
+
+
+
+}
+
+
+/* Third section code start */
+
+#third-section{
+     background-image: linear-gradient(rgb(149, 189, 173),rgba(65, 203, 180, 0.723));
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     padding: 150px 0;
+}
+#about-parent{
+     display: flex;
+     justify-content: space-between;
+     gap: 30px;
+     align-items: center;
+     margin-left: 200px;
+     margin-right: 200px;
+     color: white;
+}
+.more-about-vanilla h4{
+     font-size: 20px;
+     margin-bottom: 20px;
+}
+.more-about-vanilla ul{
+     margin: 20px 0;
+     list-style-position: inside;
+}
+.more-about-vanilla a{
+     text-decoration: none;
+     font-size: 18px;
+     background-color: yellow;
+     padding: 10px 30px;
+     display: inline-block;
+     margin-top: 20px;
+     border-radius: 5px;
+     color: black;
+}
+
+#about-single-items-parent{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 25px;
+}
+.about-single-items{
+     background-color: #EAECEE;
+     color: black;
+     padding: 40px 20px;
+     border-radius: 5px;
+     text-align: center;
+     border: 2px solid limegreen;
+}
+.about-single-items h4{
+     font-size: 20px;
+     padding: 10px 0 20px 0;
+}
+@media only screen and (max-width: 688px) {
+  #about-parent{
+    display: block;
+    margin-right:30px ;
+    margin-left: 30px;
+  }
+  
+#about-single-items-parent{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  width: 90%;
-  margin: 0 auto;
-  grid-gap: 24px;
+  grid-template-columns: repeat(1,1fr);
+  margin-top: 50px;
 }
+.about-single-items{
+
+}
+
+}
+@media only screen and (min-width: 689px) and (max-width: 1099px {
+   #about-parent{
+    display: block;
+    margin-right:30px ;
+    margin-left: 30px;
+  }
+  
+#about-single-items-parent{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  margin-top: 50px;
+}
+.about-single-items{
+
+}
+
 }
