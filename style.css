@@ -416,15 +416,47 @@ form{
   color: #343637;
 }
 
-
-
-
-
-
-
-
-
 /* <!-- 5th section code end here --> */
+
+
+/* start 6th section */
+.six-section{
+ background-color:  #07254fe2;
+ color: white;
+}
+.six-section-parent-div{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-right: 150px;
+  margin-left: 150px;
+  padding:100px 0;
+  grid-gap: 45px;
+
+}
+.first-child{
+  line-height: 1.5;
+  letter-spacing: 0.15em;
+}
+.second-chid{
+  border: 4px solid rgb(13, 110, 125);
+  padding: 20px;
+  border-radius: 5px;
+
+}
+.second-chid i{
+  font-size: 40px;
+  padding: 0 20px 20px 20px;
+}
+.second-chid h3{
+  padding-bottom: 10px;
+}
+.second-chid p{
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 12px;
+}
+.second-chid:nth-child(2){
+  border: 4px solid rgb(255, 255, 255);
+}
 
 
 
@@ -491,6 +523,23 @@ form{
 }
 /* 5th section code end here */
 
+
+/* start 6th section */
+.six-section-parent-div{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  margin-right: 30px;
+  margin-left: 30px;
+  padding:100px 0;
+  grid-gap: 25px;
+
+}
+.first-child{
+  text-align: center;
+}
+
+
+
 }
 
 
@@ -551,4 +600,20 @@ form{
 }
 /* 5th section code end here */
 
+
+/* start 6th section */
+.six-section-parent-div{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-right: 50px;
+  margin-left: 50px;
+  padding:100px 0;
+  grid-gap: 35px;
+
 }
+.first-child{
+  text-align: center;
+}
+
+}
+
